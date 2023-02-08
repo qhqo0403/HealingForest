@@ -1,0 +1,107 @@
+<footer id="main_footer">
+    <div class="footer_innerbox">
+      <div class="footer_top">
+        <h3><a href="#">healing forset</a></h3>
+        <ul class="sns">
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">Naver blog</a></li>
+        </ul>
+      </div>
+      <div class="footer_bot">
+        <div class="txtbox">
+          <p>Tel : 010-0000-0000</p>
+          <address>전남 담양군 힐링면 포레스트길 9</address>
+          <p>Business number : 000-00-00000 (대표 : 남궁진)</p>
+        </div>    
+        <div class="copyright">
+          <p>&copy;Healing Forest all right reserved.</p>
+        </div>
+        <div class="f_menu">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Room</a></li>
+            <li><a href="#">Facility</a></li>
+            <li><a href="#">Reservation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <style>
+    #main_footer{
+  width: 100%; height: 200px;
+  background: #344e41;
+}
+#main_footer>.footer_innerbox{
+  width: 1200px; height: 160px;
+  padding: 30px 0 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#main_footer>.footer_innerbox>div{
+  flex: 1;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+#main_footer>.footer_innerbox>.left>h3{
+  width: 196px; height: 37px;
+  margin-bottom: 40px;
+}
+#main_footer>.footer_innerbox>.left>h3>a{
+  display: block;
+  width: 196px; height: 37px;
+  text-indent: -9999px;
+  background: url("../img/footer_logo.png") no-repeat center center;
+}
+#main_footer>.footer_innerbox>.left>p:first-of-type{
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+#main_footer>.footer_innerbox>.left>address{
+  font-style: normal;
+  margin-bottom: 8px;
+}
+#main_footer>.footer_innerbox>.mid{
+  text-align: center;
+}
+#main_footer>.footer_innerbox>.right{
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#main_footer>.footer_innerbox>.right>.sns{
+  margin-bottom: 30px;
+}
+#main_footer>.footer_innerbox>.right>.sns>li{
+  width: 50px; height: 50px;
+  float: left;
+  margin-right: 20px;
+}
+#main_footer>.footer_innerbox>.right>.sns>li:last-child{
+  margin-right: 0;
+}
+#main_footer>.footer_innerbox>.right>.sns>li>a{
+  display: block;
+  width: 100%; height: 100%;
+  text-indent: -9999px;
+  background: url("../img/insta.png") no-repeat center center;
+}
+#main_footer>.footer_innerbox>.right>.sns>li:last-child>a{
+  background-image: url("../img/blog.png");
+}
+#main_footer>.footer_innerbox>.right>.footer_menu>li{
+  display: inline;
+  margin-left: 15px;
+}
+#main_footer>.footer_innerbox>.right>.footer_menu>li:first-child{
+  margin-left: 0;
+}
+#main_footer>.footer_innerbox>.right>.footer_menu>li>a{
+  color: #fff;
+  font-size: 1rem;
+}
+  </style>
