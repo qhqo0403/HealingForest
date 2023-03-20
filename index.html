@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0  maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="css/style.css">  
   <title>Healing forest</title>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <script src="script/app.js" defer></script>
 </head>
 <body>
   <header id="main_header">
@@ -88,28 +91,32 @@
             <a href="sub/room/room.html">View more</a>
           </div>
           <div id="wrapper1">
-            <div class="imgbox">
-              <img src="img/i_roomA01.jpg" alt="room A">
-              <img src="img/i_roomA02.jpg" alt="room A">
-              <img src="img/i_roomA03.jpg" alt="room A">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/i_roomA01.jpg" alt="room A"></div>
+                <div class="swiper-slide"><img src="img/i_roomA02.jpg" alt="room A"></div>
+                <div class="swiper-slide"><img src="img/i_roomA03.jpg" alt="room A"></div>
+              </div>
+              <button class="swiper-button-prev"></button>
+              <button class="swiper-button-next"></button>
+              <div class="swiper-pagination"></div>
             </div>
-            <button class="prev">prev</button>
-            <button class="next">next</button>
           </div>
-          <span class="page">&lt;<span class="current"> 1 </span>/<span class="total"> 3 </span>&gt;</span>
         </div>
       </div>
       <div class="rb">
         <div id="wrapper2">
-          <div class="imgbox">
-            <img src="img/i_roomB01.jpg" alt="room B">
-            <img src="img/i_roomB02.jpg" alt="room B">
-            <img src="img/i_roomB03.jpg" alt="room B">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-swiper-autoplay="3500"><img src="img/i_roomB01.jpg" alt="room B"></div>
+              <div class="swiper-slide"><img src="img/i_roomB02.jpg" alt="room B"></div>
+              <div class="swiper-slide"><img src="img/i_roomB03.jpg" alt="room B"></div>
+            </div>
+            <button class="swiper-button-prev"></button>
+            <button class="swiper-button-next"></button>
+            <div class="swiper-pagination"></div>
           </div>
-          <button class="prev">prev</button>
-          <button class="next">next</button>
         </div>
-        <span class="page">&lt;<span class="current"> 1 </span>/<span class="total"> 3 </span>&gt;</span>
         <div class="infobox">
           <h3>Room B</h3>
           <p>편안하고 따뜻한 우드톤</p>
@@ -246,6 +253,5 @@
     </div>
   </footer>
   <!-- <script src="script/main_script.js"></script> -->
-<!--   <script src="script/app.js"></script>
- --></body>
+</body>
 </html>

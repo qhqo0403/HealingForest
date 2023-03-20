@@ -155,6 +155,9 @@ body, html{
   text-align: center;
   margin-bottom: 60px;
 }
+
+
+
 #main_content>.rooms>.ra_bg{
   width: 100%; height: 505px;
   background: #dad7cd;
@@ -162,10 +165,9 @@ body, html{
   margin-bottom: 40px;
 }
 #main_content>.rooms>.ra_bg>.ra{
-  width: 100%; max-width: 1200px; height: 465px;
+  width: 100%; max-width: 1200px; 
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   position: relative;
 }
@@ -212,56 +214,35 @@ body, html{
   font-size: 1.5rem;
   color: #333;
 }
-#main_content>.rooms div[id*=wrapper]{
+
+
+#main_content>.rooms div#wrapper1, #main_content>.rooms div#wrapper2{
   width: 700px;
-  position: relative;
-  overflow: hidden;
 }
-#main_content>.rooms .imgbox{
-/*   width: 700px; 
-  position: relative; */
-  transition: all 1s;
-  display: flex;
-  flex-wrap: nowrap;
-}
-#main_content>.rooms .imgbox>img{
-  width: 100%; height: auto;
-  /* position: absolute; left: 0; top: 0; */
-}
-#main_content>.rooms .ra>.imgbox>img:nth-of-type(2), #main_content>.rooms .ra>.imgbox>img:nth-of-type(3){
-  left: 700px;
-}
-#main_content>.rooms div[id*=wrapper]>button{
+#main_content>.rooms button{
   background: transparent;
   border: 0;
-  width: 350px; height: 100%;
+  width: 50%; height: 100%;
   position: absolute; top: 0;
   z-index: 10;
   text-indent: -9999px;
+  display: block;
+  margin: 0;
 }
-#main_content>.rooms div[id*=wrapper]>.prev/* , #main_content>.rooms div[id*=wrapper]>.prev */{
+#main_content>.rooms .swiper-button-prev/* , #main_content>.rooms div[id*=wrapper]>.prev */{
   left: 0;
 }
-#main_content>.rooms div[id*=wrapper]>.prev:hover{
+#main_content>.rooms .swiper-button-prev:hover{
   cursor: url(../img/prevBtn.png) 5 5, pointer;
 }
-#main_content>.rooms div[id*=wrapper]>.next/* , #main_content>.rooms div[id*=wrapper]>.next */{
+#main_content>.rooms .swiper-button-next/* , #main_content>.rooms div[id*=wrapper]>.next */{
   right: 0;
 }
-#main_content>.rooms div[id*=wrapper]>.next:hover{
+#main_content>.rooms .swiper-button-next:hover{
   cursor: url(../img/nextBtn.png) 5 5, pointer;
 }
-/* #main_content>.rooms .ra>.imgbox>.prev{
-  left: 0;
-}
-#main_content>.rooms .ra>.imgbox>.next{
-  right: 0;
-} */
-#main_content>.rooms .ra>.page{
-  position: absolute; z-index: 10; right: 25%; bottom: -30px;
-}
-#main_content>.rooms .rb>.page{
-  position: absolute; z-index: 10; left: 25%; bottom: -30px;
+#main_content>.rooms .swiper-pagination{
+  color: #fff;
 }
 #main_content>.rooms>.rb{
   width: 100%; max-width: 1200px; height: 465px;
@@ -273,6 +254,10 @@ body, html{
 #main_content>.rooms>.rb .infobox>a{
   background: #dad7cd;
 }
+
+
+
+
 /*------------------------room end---------------------*/
 #main_content>.service_facility{
   width: 100%;

@@ -1,91 +1,22 @@
-const imgWrap1 = document.querySelector('#wrapper1');
-const imgWrap2 = document.querySelector('#wrapper2');
-  /* const prevBtn = document.querySelector('#prev');
-  const nextBtn = document.querySelector('#next'); */
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
 
-// const initialPosition = (parent) =>{
-// const slides = parent.querySelector('.imgbox');
-// const slide = parent.querySelectorAll('img');
+  speed: 800,
+  spaceBetween: 0,
 
-// const lastIndex = slide.length - 1;
-// const first = slide[0]; 
-// const last = slide[lastIndex];
-// const imgW = first.clientWidth;
-// let indexNum = 1;
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+    clickable: true,
+  },
 
-// slides.appendChild(first.cloneNode(true));
-// slides.insertBefore(last.cloneNode(true), first);
-// slides.style.transition = 'none';
-// slides.style.transform = `translateX(-${imgW*indexNum}px)`;
-// }
-// initialPosition(imgWrap1);
-// initialPosition(imgWrap2);
-const slideFunc = (parent) => {
-  const slides = parent.querySelector('.imgbox');
-  const slide = slides.querySelectorAll('img');
-  const prevBtn = parent.querySelector('.prev');
-  const nextBtn = parent.querySelector('.next');
-
-  const lastIndex = slide.length - 1;
-  const first = slide[0]; 
-  const last = slide[lastIndex];
-  const imgW = first.clientWidth;
-  let indexNum = 1;
-
-  slides.append(first.cloneNode(true));
-  slides.insertBefore(last.cloneNode(true), first);
-  slides.style.transition = 'none';
-  slides.style.transform = `translateX(-${imgW*indexNum}px)`;
-
-  const transition = () => {
-    slides.style.transition = "transform 1s";
-    slides.style.transform = `translateX(-${imgW*indexNum}px)`;
-  }
-  const next = () =>{
-    indexNum++;
-    transition();
-  }
-  const prev = () =>{
-    indexNum--;
-    transition();
-  }
-
-  slides.addEventListener('transitionend', ()=>{
-    if( indexNum === (lastIndex + 2)){
-      indexNum = 1;
-      slides.style.transition = 'none';
-      slides.style.transform = `translateX(-${imgW*indexNum}px)`;
-    }
-    if( indexNum === 0){
-      indexNum = lastIndex + 1;
-      slides.style.transition = 'none';
-      slides.style.transform = `translateX(-${imgW*indexNum}px)`;
-    }
-  });
-
-  nextBtn.addEventListener('click', () =>{
-    clearInterval(timer);
-    next();
-    timer = setInterval(next, 4000);
-    if( indexNum === slide.length){
-      slides.append(first.cloneNode(true));
-      indexNum = 0;
-    }
-  });
-  prevBtn.addEventListener('click', () =>{
-    clearInterval(timer);
-    prev();
-    timer = setInterval(next, 4000);
-    if( indexNum === 0){
-      indexNum = lastIndex + 1;
-      slides.style.transition = 'none';
-      slides.style.transform = `translateX(-${imgW*indexNum}px)`;
-    }
-  });
-  let timer = setInterval(next, 4000);
-}
-slideFunc(imgWrap1);
-setTimeout(() => {slideFunc(imgWrap2)}, 2000);
-/* const slideMoving = (parent) => {
-
-} */
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+  },
+});
