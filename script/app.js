@@ -6,7 +6,7 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 0,
 
   autoplay: {
-    delay: 2500,
+    delay: 3500,
     disableOnInteraction: false,
   },
   pagination: {
@@ -20,3 +20,12 @@ const swiper = new Swiper('.swiper', {
   prevEl: '.swiper-button-prev',
   },
 });
+
+
+
+/* const allText = document.querySelectorAll('p');
+
+allText.forEach(text => {
+  text.style.cursor = 'default';
+});
+ */
