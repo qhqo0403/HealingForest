@@ -87,11 +87,13 @@ body, html{
   transition: all .4s;
 }
 #main_content>.about>.about_top>.txtbox>p{
-  height: 55px;
   line-height: 2em;
   /* font-size: 1.25rem; */
   letter-spacing: 0.5px;
   margin-left: 10px;
+}
+#main_content>.about>.about_top>.txtbox>p .d_space {
+  display: block;
 }
 #main_content>.about>.about_bot{
   width: 100%; max-width: 1200px; height: 840px;
@@ -513,26 +515,38 @@ body, html{
     padding-top: 50px;
   }
   #main_content>.about>.about_top{
-    height: 250px;
-    margin-bottom: 50px;
+    width: 95%;
+    margin: 0 auto 50px;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  #main_content>.about>.about_top>img{
-    width: 90%;
+  #main_content>.about>.about_top>.imgbox{
+    width: 100%;
   }
-  #main_content>.about>.about_top>.img_bg{
-    width: 90%;
-    top: 4%;
+  #main_content>.about>.about_top>.imgbox>img {
+    width: 100%; height: 100%;
+    left: 0; top: 0;
   }
-  #main_content>.about>.about_top>.txtbox{
-    left: 5%;
+  #main_content>.about>.about_top>.txtbox {
+    margin: 10px auto 0;
   }
-  #main_content>.about>.about_top>.txtbox>h3{
+  #main_content>.about>.about_top>.txtbox>h3 {
+    white-space: nowrap;
     margin-bottom: 10px;
     font-size: 2.5rem;
   }
-  #main_content>.about>.about_top>.txtbox>p{
-    width: 100%;
-    margin-left: 40%;
+  #main_content>.about>.about_top>.txtbox>p {
+    margin: 0;
+    line-height: 1.5em;
+    letter-spacing: 0.3px;
+    margin-left: 30px;
+  }
+  #main_content>.about>.about_top>.txtbox>p .d_space {
+    display: none;
+  }
+  #main_content>.about>.about_top>.txtbox .m_b {
+    display: block;
   }
   #main_content>.about>.about_bot{
     width: 95%; height: 350px;
