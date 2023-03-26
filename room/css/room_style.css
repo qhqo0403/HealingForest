@@ -80,20 +80,29 @@ body{
   font-size: 2rem;
   margin-left: 50px;
   cursor: pointer;
+  position: relative;
+}
+#main_content>.room_header>.btns>button::after {
+  content: '';
+  position: absolute; left: 50%; bottom: 0;
+  transform: translateX(-50%);
+  width: 0; height: 3px;
+  background: orange;
+  transition: all .2s;
 }
 #main_content>.room_header>.btns>button:first-of-type{
   margin-left: 0;
 }
-#main_content>.room_header>.btns>button>span{
-  display: block;
-  width: 80px; height: 5px;
-  background: #ff8540;
-  position: relative; left: 3px;
-  opacity: 0;
+#main_content>.room_header>.btns>button.active::after {
+  width: 100%;
 }
 #main_content>.room_a, #main_content>.room_b{
   width: 100%; max-width: 1200px;
   margin: 0 auto 150px;
+  display: none;
+}
+#main_content>.room_a.active, #main_content>.room_b.active {
+  display: block;
 }
 #main_content .innerbox{
   width: 100%;
@@ -105,6 +114,7 @@ body{
 #main_content .innerbox>.imgbox{
   width: 58.33333%;
   overflow: hidden;
+  margin-left: 0;
 }
 #main_content .innerbox>.imgbox>ul{
   width: 100%; height: 100%;
@@ -113,6 +123,14 @@ body{
 }
 #main_content .innerbox>.imgbox>ul>li{
   width: 100%;
+}
+#main_content .swiper-button-prev, #main_content .swiper-button-next {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+#main_content .swiper-pagination {
+  color: #fff;
 }
 /* #main_content .innerbox>.imgbox img{
   width: 100%; height: auto;

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healing forest</title>
     <link rel="stylesheet" href="css/room_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="script/room.js" defer></script>
   </head>
   <body>
     <header id="main_header">
@@ -44,23 +47,25 @@
           </p>
         </div>
         <div class="btns">
-          <button id="a_info">Room A<span class="active"></span></button>
-          <button id="b_info">Room B<span class="active"></span></button>
+          <button id="a_info" class="active">Room A</button>
+          <button id="b_info">Room B</button>
         </div>
       </section>
-      <section class="room_a">
+      <section class="room_a active">
         <div class="innerbox">
-          <div class="imgbox">
-            <ul>
-              <li><img src="img/ra01.jpg" alt="객실A사진"></li>
-              <li><img src="img/ra02.jpg" alt="객실A사진"></li>
-              <li><img src="img/ra03.jpg" alt="객실A사진"></li>
-              <li><img src="img/ra04.jpg" alt="객실A사진"></li>
-              <li><img src="img/ra05.jpg" alt="객실A사진"></li>
-              <li><img src="img/ra06.jpg" alt="객실A사진"></li>
+          <div class="swiper imgbox">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"><img src="img/ra01.jpg" alt="객실A사진"></li>
+              <li class="swiper-slide"><img src="img/ra02.jpg" alt="객실A사진"></li>
+              <li class="swiper-slide"><img src="img/ra03.jpg" alt="객실A사진"></li>
+              <li class="swiper-slide"><img src="img/ra04.jpg" alt="객실A사진"></li>
+              <li class="swiper-slide"><img src="img/ra05.jpg" alt="객실A사진"></li>
+              <li class="swiper-slide"><img src="img/ra06.jpg" alt="객실A사진"></li>
             </ul>
+            <button class="swiper-button-prev"></button>
+            <button class="swiper-button-next"></button>
+            <div class="swiper-pagination"></div>
           </div>
-          <!-- <span class="page">&lt;<span class="current"> 1 </span>/<span class="total"> 3 </span>&gt;</span> -->
           <div class="info">
             <h2>Room A.</h2>
             <strong>심플하고 깨끗한 화이트톤의 인테리어</strong>
@@ -169,17 +174,19 @@
       </section>
       <section class="room_b">
         <div class="innerbox">
-          <div class="imgbox">
-            <ul>
-              <li><img src="img/rb01.jpg" alt="객실A사진"></li>
-              <li><img src="img/rb02.jpg" alt="객실A사진"></li>
-              <li><img src="img/rb03.jpg" alt="객실A사진"></li>
-              <li><img src="img/rb04.jpg" alt="객실A사진"></li>
-              <li><img src="img/rb05.jpg" alt="객실A사진"></li>
-              <li><img src="img/rb06.jpg" alt="객실A사진"></li>
+          <div class="swiper imgbox">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"><img src="img/rb01.jpg" alt="객실A사진"></li>
+              <li class="swiper-slide"><img src="img/rb02.jpg" alt="객실A사진"></li>
+              <li class="swiper-slide"><img src="img/rb03.jpg" alt="객실A사진"></li>
+              <li class="swiper-slide"><img src="img/rb04.jpg" alt="객실A사진"></li>
+              <li class="swiper-slide"><img src="img/rb05.jpg" alt="객실A사진"></li>
+              <li class="swiper-slide"><img src="img/rb06.jpg" alt="객실A사진"></li>
             </ul>
+            <button class="swiper-button-prev"></button>
+            <button class="swiper-button-next"></button>
+            <div class="swiper-pagination"></div>
           </div>
-          <!-- <span class="page">&lt;<span class="current"> 1 </span>/<span class="total"> 3 </span>&gt;</span> -->
           <div class="info">
             <h2>Room B.</h2>
             <strong>편안하고 따뜻한 우드톤의 인테리어</strong>
