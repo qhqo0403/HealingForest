@@ -10,11 +10,24 @@ img{ display: block; border: 0;}
 
 body{
   font-size: 16px;
-  font-family: Roboto, sans-serif;
+  font-family: 'Caveat', 'Roboto', sans-serif;
   color: #333;
   font-weight: 500;
 }
-
 #main_content {
   height: 300vh;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.reserv_intro {
+  width: 100%; height: 500px;
+  background: url(../img/reservation_intro.jpg) no-repeat center center / cover;
+  position: relative;
+}
+.reserv_intro .txtbox {
+  position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
 }
