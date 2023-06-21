@@ -41,8 +41,7 @@ body{
 #main_content>.about_top{
   width: 100%; max-width: 1200px;
   padding-top: 100px;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
 }
 #main_content>.about_top>.top_header{
   width: 100%;
