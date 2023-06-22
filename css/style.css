@@ -25,12 +25,23 @@ body, html{
   background: url("../img/main_bg.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
-/*   animation: inside 40s linear;
-  animation-fill-mode: both; */
+  animation: inside 40s linear alternate both;
+
 }
-#main_content>.entry>.entry_bg{
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+@keyframes inside {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 130%;
+  }
+}
+
+#main_content>.entry::after {
+  content: '';
+  width: inherit; height: inherit;
+  position: absolute; left: 0; top: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 #main_content>.entry>.txtbox{
   position: absolute; left: 50%; top: 50%; z-index: 5;
@@ -49,10 +60,6 @@ body, html{
   font-size: 1rem;
   line-height: 1.6em;
   letter-spacing: 1px;
-}
-@keyframes inside{
-  0%{background-size: 100%;}
-  100%{background-size: 150%;}
 }
 /*---------------entry end-------------------*/
 #main_content>.about{
@@ -158,9 +165,6 @@ body, html{
   text-align: center;
   margin-bottom: 60px;
 }
-
-
-
 #main_content>.rooms>.ra_bg{
   width: 100%; height: 505px;
   background: #dad7cd;
@@ -217,8 +221,6 @@ body, html{
   font-size: 1.5rem;
   color: #333;
 }
-
-
 #main_content>.rooms div#wrapper1, #main_content>.rooms div#wrapper2{
   width: 700px;
 }
@@ -257,10 +259,6 @@ body, html{
 #main_content>.rooms>.rb .infobox>a{
   background: #dad7cd;
 }
-
-
-
-
 /*------------------------room end---------------------*/
 #main_content>.service_facility{
   width: 100%;
@@ -371,7 +369,7 @@ body, html{
 }
 #main_content>.service_facility>.facility>figure>a>img{
   width: 100%; height: auto;
-  transition: all .4s;
+  transition: all .8s;
 }
 #main_content>.service_facility>.facility>figure>figcaption{
   margin-top: 10px;
@@ -394,6 +392,7 @@ body, html{
   }
   #main_content>.entry {
     background-size: cover;
+    animation: none;
   }
   #main_content>.about{
     width: 100%;
@@ -507,6 +506,7 @@ body, html{
   }
   #main_content>.entry {
     background-size: cover;
+    animation: none;
   }
   #main_content>.entry>.txtbox{
     width: 95%;

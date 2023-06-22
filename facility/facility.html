@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Healing forest</title>
   <link rel="stylesheet" href="css/facility_style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script/app.js" defer></script>
 </head>
 <body>
   <header id="main_header">
@@ -120,17 +123,25 @@
             </p>
             <span>*펜션에서부터 걸어서 10분 거리에 위치해 있습니다</span>
           </div>
-          <div class="imgbox">
-            <div class="wrapper">
-              <ul>
-                <li><img src="img/sauna01.jpg" alt="sauna"></li>
-                <li><img src="img/sauna02.jpg" alt="sauna"></li>
-                <li><img src="img/sauna03.jpg" alt="sauna"></li>
-                <li><img src="img/sauna04.jpg" alt="sauna"></li>
-                <li><img src="img/sauna05.jpg" alt="sauna"></li>
-              </ul>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/sauna01.jpg" alt="sauna">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/sauna02.jpg" alt="sauna">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/sauna03.jpg" alt="sauna">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/sauna04.jpg" alt="sauna">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/sauna05.jpg" alt="sauna">
+              </div>
             </div>
-            <span class="total"><span class="current"></span></span>
+            <div class="swiper-scrollbar"></div>
           </div>
           <div class="info">
             <h3>Information</h3>

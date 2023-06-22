@@ -1,3 +1,5 @@
+
+// room section swiper
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
@@ -20,12 +22,3 @@ const swiper = new Swiper('.swiper', {
   prevEl: '.swiper-button-prev',
   },
 });
-
-
-
-/* const allText = document.querySelectorAll('p');
-
-allText.forEach(text => {
-  text.style.cursor = 'default';
-});
- */
