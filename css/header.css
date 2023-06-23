@@ -68,7 +68,6 @@
 }
 
 /* media query */
-
 @media screen and (max-width: 1024px) and (min-width: 641px) {
   #main_header>.header_innerbox{
     width: 95%;
