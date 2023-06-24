@@ -24,6 +24,7 @@ body{
   background: url("../img/intro_bg.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
+  white-space: nowrap;
 }
 #main_content>.facility_intro>.txtbox{
   position: absolute; left: 50%; top: 50%;
@@ -125,6 +126,9 @@ body{
   margin-bottom: 6px;
   letter-spacing: 0.5px;
 }
+#main_content>.service>.aroma>.txtbox>p>.d_space {
+  display: block;
+}
 #main_content>.service>.aroma>.txtbox>span{
   font-size: 0.875rem;
   color: #959595;
@@ -193,6 +197,9 @@ body{
   letter-spacing: 0.5px;
   color: red;
 }
+#main_content>.service>.rest>.fire>.txtbox .d_space {
+  display: block;
+}
 #main_content>.service>.rest>.breakfast{
   width: 100%;
   display: flex;
@@ -202,7 +209,10 @@ body{
   margin-bottom: 0;
   margin-top: auto;
 }
-#main_content>.service>.rest>.breakfast>.txtbox>p>span{
+#main_content>.service>.rest>.breakfast>.txtbox>p>.d_space {
+  display: block;
+}
+#main_content>.service>.rest>.breakfast>.txtbox>p>.food{
   display: block;
   text-indent: 83px;
 }
@@ -238,6 +248,9 @@ body{
   font-size: 1rem;
   line-height: 1.8em;
   margin-bottom: 6px;
+}
+#main_content>.facility>.sauna>.innerbox>.sauna_header>p>.d_space{
+  display: block;
 }
 #main_content>.facility>.sauna>.innerbox>.sauna_header>span{
   font-size: 0.875rem;
@@ -285,7 +298,7 @@ body{
   margin-bottom: 15px;
 }
 #main_content>.facility>.sauna>.innerbox>.info>.detail>.list>ul{
-  margin-left: 40px;
+  padding-left: 40px;
   list-style-type: disc;
 }
 #main_content>.facility>.sauna>.innerbox>.info>.detail>.list>ul>li{
@@ -346,7 +359,7 @@ body{
   html, body {
     font-size: 14px;
   }
-  #main_content>.facility_intro {
+  #main_content>.facility_intro>.txtbox {
     font-size: 3.5rem;
     white-space: nowrap;
   }
@@ -394,6 +407,180 @@ body{
   /* service end */
   #main_content>.facility>.sauna>.innerbox {
     width: 95%;
+  }
+  #main_content>.facility>.garden {
+    width: 95%;
+  }
+  #main_content>.facility>.garden>.imgbox {
+    height: auto;
+    flex-direction: row;
+  }
+  #main_content>.facility>.garden>.imgbox>img:nth-of-type(1), #main_content>.facility>.garden>.imgbox>img:nth-of-type(2) {
+    width: 49%;
+  }
+  #main_content>.facility>.garden>.imgbox>img:nth-of-type(3) {
+    display: none;
+  }
+}
+/* mobile */
+@media screen and (max-width: 640px) {
+  html, body {
+    font-size: 12px;
+  }
+  .m_space {
+    display: block;
+  }
+  #main_content>.facility_intro>.txtbox {
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+  #main_content>.facility_intro>.txtbox>p:last-of-type{
+    text-indent: 100px;
+  }
+  #main_content>.content_header {
+    margin-bottom: 100px;
+  }
+  #main_content>.content_header>.h_bar {
+    width: 250px;
+    margin-bottom: 15px;
+  }
+  #main_content>.service {
+    width: 95%;
+    margin-bottom: 50px;
+  }
+  #main_content>.service>.bedding {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  #main_content>.service>.bedding>.innerbox>img {
+    display: none;
+  }
+  #main_content>.service>.bedding>img:first-of-type {
+    width: 100%;
+    order: 2;
+  }
+  #main_content>.service>.bedding>.innerbox {
+    order: 1;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #main_content>.service>.bedding>.innerbox>.txtbox {
+    padding-left: 10px;
+  }
+  #main_content>.service>.aroma {
+    margin-bottom: 50px;
+  }
+  #main_content>.service>.aroma>.txtbox {
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+  #main_content>.service>.aroma>.imgbox>img {
+    width: 49%;
+  }
+  #main_content>.service>.aroma>.imgbox>img:last-of-type {
+    display: none;
+  }
+  #main_content>.service>.aroma>.txtbox>p>.d_space {
+    display: none;
+  }
+  #main_content>.service>.rest {
+    height: auto;
+  }
+  #main_content>.service>.rest, #main_content>.service>.rest>.coffee, #main_content>.service>.rest>.fire, #main_content>.service>.rest>.breakfast {
+    position: static;
+  }
+  #main_content>.service>.rest img {
+    width: 100%; height: 300px;
+  }
+  #main_content>.service>.rest .txtbox {
+    padding-left: 10px;
+  }
+  #main_content>.service>.rest>.coffee {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  #main_content>.service>.rest>.coffee>.txtbox {
+    width: 100%;
+    order: 1;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+  #main_content>.service>.rest>.coffee>img {
+    order: 2;
+  }
+  #main_content>.service>.rest>.fire {
+    transform: translateY(0);
+    margin-bottom: 50px;
+  }
+  #main_content>.service>.rest>.fire>.txtbox {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #main_content>.service>.rest>.fire>.txtbox .d_space {
+    display: none;
+  }
+  #main_content>.service>.rest>.breakfast {
+    flex-direction: column;
+  }
+  #main_content>.service>.rest>.breakfast>.txtbox {
+    order: 1;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  #main_content>.service>.rest>.breakfast>img {
+    order: 2;
+  }
+  #main_content>.service>.rest>.breakfast>.txtbox>p>.food {
+    text-indent: 0;
+    display: inline;
+  }
+  #main_content>.service>.rest>.breakfast>.txtbox>p>.food::before {
+    content: ', ';
+  }
+  #main_content>.facility {
+    margin-bottom: 100px;
+  }
+  #main_content>.facility>.sauna {
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+  #main_content>.facility>.sauna>.innerbox {
+    width: 95%;
+  }
+  #main_content>.facility>.sauna>.innerbox>.sauna_header {
+    margin-bottom: 15px;
+    padding-left: 10px;
+  }
+  #main_content>.facility>.sauna>.innerbox>.sauna_header>p>.d_space {
+    display: none;
+  }
+  #main_content>.facility .swiper {
+    padding-bottom: 20px;
+  }
+  #main_content>.facility .swiper img {
+    width: 100%;
+  }
+  #main_content>.facility>.sauna>.innerbox>.info {
+    display: block;
+    padding-top: 30px;
+  }
+  #main_content>.facility>.sauna>.innerbox>.info>.detail>p {
+    margin-bottom: 8px;
+  }
+  #main_content>.facility>.sauna>.innerbox>.info>.detail>p:last-of-type {
+    margin-bottom: 20px;
+  }
+  #main_content>.facility>.sauna>.innerbox>.info>.detail>p:first-of-type>span {
+    text-indent: 0;
+  }
+  #main_content>.facility>.sauna>.innerbox>.info>.detail>.list>h3 {
+    margin-bottom: 10px;
+  }
+  #main_content>.facility>.sauna>.innerbox>.info>.detail>.list>ul {
+    padding-left: 20px;
+  }
+  #main_content>.facility>.sauna>.innerbox>.info>.detail>.list>ul>li {
+    margin-bottom: 8px;
   }
   #main_content>.facility>.garden {
     width: 95%;
