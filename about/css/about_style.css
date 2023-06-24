@@ -6,7 +6,7 @@
 body, header, main, footer, nav, section, div, p, h1, h2, h3, ul, li{ margin: 0; padding: 0; }
 ul{ list-style: none;}
 a{ text-decoration: none;}
-img{ display: block; border: 0;}
+img{ border: 0;}
 
 body{
   font-size: 16px;
@@ -186,6 +186,7 @@ body{
     left: 0;
   }
   #main_content>.about_top>.top_bot{
+    position: static;
     text-align: center;
     margin-bottom: 0;
   }
@@ -201,10 +202,10 @@ body{
     margin-top: 15px;
   }
   #main_content>.about_top>.top_bot>img:first-of-type{
-    width: 45%;
+    width: 49%; height: 250px;
   }
   #main_content>.about_top>.top_bot>img:last-of-type{
-    width: 50%;
+    width: 49%; height: 250px;
     position: static;
     transform: none;
   }
