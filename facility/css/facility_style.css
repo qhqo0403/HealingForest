@@ -388,6 +388,9 @@ body{
     transform: translateY(0);
     margin: 30px 0;
   }
+  #main_content>.service>.rest>.fire>.txtbox {
+    margin-bottom: 0;
+  }
   /* service end */
   #main_content>.facility>.sauna>.innerbox {
     width: 95%;
