@@ -207,6 +207,9 @@ body{
   .content_header h2 {
     font-size: 3rem;
   }
+  .content_header h2::before {
+    height: 3px;
+  }
   .content_header p {
     margin-top: 10px;
   }
