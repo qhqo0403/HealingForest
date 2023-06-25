@@ -91,7 +91,7 @@ body{
 .notice .list li:last-of-type, .refund ul li:last-of-type, .location ul li:last-of-type {
   margin-bottom: 0;
 }
-.notice .list li:first-of-type span{
+.notice .list li:first-of-type .time{
   display: block;
   font-size: 0.875rem;
   margin-bottom: 10px;
@@ -168,4 +168,24 @@ body{
 .location ul {
   list-style: circle;
   padding-left: 20px;
+}
+/* media query */
+/* tablet */
+@media screen and (max-width: 1024px) and (min-width: 641px) {
+  html, body {
+    font-size: 14px;
+  }
+  .reserv_intro .txtbox {
+    font-size: 3.5rem;
+  }
+  .content_header {
+    margin-bottom: 100px;
+  }
+  .notice, .price, .refund, .location {
+    width: 95%;
+  }
+  .notice .t_space {
+    display: block;
+    margin: 3px 0;
+  }
 }
