@@ -189,3 +189,26 @@ body{
     margin: 3px 0;
   }
 }
+/* mobile */
+@media screen and (max-width: 640px) {
+  html, body {
+    font-size: 12px;
+  }
+  .reserv_intro .txtbox {
+    font-size: 3rem;
+  }
+  .content_header {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .content_header p {
+    margin-top: 10px;
+  }
+  .notice, .price, .refund, .location {
+    width: 95%;
+    margin-bottom: 50px;
+  }
+  .refund table {
+    width: 100%;
+  }
+}
