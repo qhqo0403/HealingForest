@@ -194,12 +194,18 @@ body{
   html, body {
     font-size: 12px;
   }
+  .reserv_intro {
+    height: 300px;
+  }
   .reserv_intro .txtbox {
     font-size: 3rem;
   }
   .content_header {
     padding-top: 50px;
     margin-bottom: 50px;
+  }
+  .content_header h2 {
+    font-size: 3rem;
   }
   .content_header p {
     margin-top: 10px;

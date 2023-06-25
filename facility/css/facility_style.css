@@ -433,6 +433,9 @@ body{
   #main_content>.content_header {
     padding-top: 50px;
   }
+  #main_content>.facility_intro {
+    height: 300px;
+  }
   #main_content>.facility_intro>.txtbox {
     font-size: 2.5rem;
     white-space: nowrap;
@@ -443,8 +446,11 @@ body{
   #main_content>.content_header {
     margin-bottom: 50px;
   }
+  #main_content>.content_header>h1 {
+    font-size: 3rem;
+  }
   #main_content>.content_header>.h_bar {
-    width: 250px;
+    width: 220px;
     margin-bottom: 15px;
   }
   #main_content>.service {

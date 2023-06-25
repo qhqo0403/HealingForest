@@ -258,6 +258,9 @@ body{
   html, body{
     font-size: 12px;
   }
+  #main_content>.room_intro {
+    height: 300px;
+  }
   #main_content>.room_a, #main_content>.room_b{
     margin-bottom: 50px;
   }
