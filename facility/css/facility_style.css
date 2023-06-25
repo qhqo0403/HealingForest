@@ -430,6 +430,9 @@ body{
   .m_space {
     display: block;
   }
+  #main_content>.content_header {
+    padding-top: 50px;
+  }
   #main_content>.facility_intro>.txtbox {
     font-size: 2.5rem;
     white-space: nowrap;
@@ -438,7 +441,7 @@ body{
     text-indent: 100px;
   }
   #main_content>.content_header {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   #main_content>.content_header>.h_bar {
     width: 250px;
