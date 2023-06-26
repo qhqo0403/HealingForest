@@ -3,10 +3,6 @@
 @import '../../css/header.css';
 @import '../../css/footer.css';
 
-body, header, main, footer, nav, section, div, p, h1, h2, h3, ul, li, button{ margin: 0; padding: 0;}
-ul{ list-style: none;}
-a{ text-decoration: none;}
-img{ display: block; border: 0;}
 
 body{
   font-size: 16px;
@@ -32,7 +28,6 @@ body{
   color: #fff;
   font-family: Caveat, sans-serif;
   font-size: 5rem;
-  font-weight: 400;
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
 }
 #main_content>.facility_intro>.txtbox>p:last-of-type{

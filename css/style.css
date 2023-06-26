@@ -3,12 +3,9 @@
 @import 'header.css';
 @import 'footer.css';
 
-body, header, main, footer, section, div, p, nav, h1, h2, h3, ul, li, figure, figcaption, span, address, button{
+figure, figcaption, span, address, button{
   margin: 0; padding: 0;
 }
-ul{ list-style: none;}
-a{ text-decoration: none;}
-img{ display: block; border: 0;}
 
 body, html{
   font-size: 16px;
@@ -26,8 +23,8 @@ body, html{
   background-size: cover;
   position: relative;
   animation: inside 40s linear alternate both;
-
 }
+
 @keyframes inside {
   0% {
     background-size: 100%;
