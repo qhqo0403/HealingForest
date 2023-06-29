@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const roomASwiper = new Swiper('.first', {
   direction: 'horizontal',
   loop: true,
 
@@ -6,9 +6,10 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 0,
 
   autoplay: {
-    delay: 2000,
+    delay: 2500,
     disableOnInteraction: false,
   },
+
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",
@@ -19,6 +20,32 @@ const swiper = new Swiper('.swiper', {
   prevEl: '.swiper-button-prev',
   },
 });
+const roomBSwiper = new Swiper('.second', {
+  direction: 'horizontal',
+  loop: true,
+
+  speed: 900,
+  spaceBetween: 0,
+
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+  },
+});
+
+window.onload = () => {
+  roomBSwiper.autoplay.stop();
+}
 
 const roomA = {
   room: document.querySelector('.room_a'),
@@ -37,9 +64,13 @@ const activeHandler = (room1, room2) => {
 
 roomA.button.addEventListener('click', () => {
   activeHandler(roomA, roomB);
+  roomASwiper.autoplay.start();
+  roomBSwiper.autoplay.stop();
 });
 roomB.button.addEventListener('click', () => {
   activeHandler(roomB, roomA);
+  roomASwiper.autoplay.stop();
+  roomBSwiper.autoplay.start();
 });
 
 const toggleGnb = () => {
