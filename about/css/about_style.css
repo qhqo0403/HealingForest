@@ -191,22 +191,24 @@ body{
   }
   #main_content>.about_top>.top_bot>.txtbox{
     position: static;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
   #main_content>.about_top>.top_bot>.txtbox>strong{
     font-size: 1rem;
   }
   #main_content>.about_top>.top_bot>.txtbox>p{
     font-size: 0.875rem;
-    margin-top: 15px;
+    margin-top: 10px;
   }
   #main_content>.about_top>.top_bot>img:first-of-type{
-    width: 49%; height: 250px;
+    width: 49%; height: 200px;
+    display: inline;
   }
   #main_content>.about_top>.top_bot>img:last-of-type{
-    width: 49%; height: 250px;
+    width: 49%; height: 200px;
     position: static;
     transform: none;
+    display: inline;
   }
   #main_content>.about_bot{
     padding: 50px 0;
@@ -216,12 +218,12 @@ body{
   }
   #main_content>.about_bot>.innerbox>strong{
     font-size: 1rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   #main_content>.about_bot>.innerbox>p{
     font-size: 0.875rem;
     width: 310px;
-    margin: 0 auto 25px;
+    margin: 0 auto 10px;
   }
   #main_content>.about_bot>.innerbox>p>.space{
     display: none;
