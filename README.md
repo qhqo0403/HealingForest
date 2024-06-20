@@ -13,22 +13,46 @@
  - Main : 메인 페이지
  - About : 펜션 소개 페이지
  - Room : 객실 소개 페이지
- - Facility : 서비스와 주변 시설 소개 페이지
+ - Service & Facility : 서비스와 주변 시설 소개 페이지
  - Reservation : 예약 페이지
 
 ## 💻화면구성
 ### - main
-<!--
-<img src="/images/output/video1.gif" width="250" height="250"/>  
+| 데스크탑 | 모바일 |
+|-------|-------|
+| <img src="/pages_capture/main.gif"/> | <img src="/pages_capture/m_main.gif" /> |
 
 : HealingForeset의 메인 페이지입니다. CSS의 애니메이션을 활용하여 숲 속으로 걸어가는 느낌을 연출했습니다.
 객실 이미지는 swiper를 이용했고, 주변시설 소개 이미지들은 flex 를 이용하여 마우스를 올리면 설명이 보이면서 확장될 수 있도록 만들었습니다.
 
+***
+### - About
+| 데스크탑 | 모바일 |
+|-------|-------|
+| <img src="/pages_capture/about.gif"/> | <img src="/pages_capture/m_about.gif"/> |
+
 : 펜션에 대한 소개 페이지입니다.
+
+***
+### - Room
+| 데스크탑 | 모바일 |
+|-------|-------|
+| <img src="/pages_capture/room.gif"/> | <img src="/pages_capture/m_room.gif"/> |
 
 : 객실 소개 페이지입니다. 각 객실의 이미지는 swiper를 적용했고 버튼을 통해 객실의 정보를 바꿀 수 있도록 만들었습니다.
 
+***
+### - Service & Facility
+| 데스크탑 | 모바일 |
+|-------|-------|
+| <img src="/pages_capture/facility.gif"/> | <img src="/pages_capture/m_facility.gif"/> |
+
 : 서비스와 주변 시설에 대한 페이지 입니다. CSS의 position을 이용하여 레이아웃을 구성하였습니다.
 
+***
+### - Reservation
+| 데스크탑 | 모바일 |
+|-------|-------|
+| <img src="/pages_capture/reservation.gif"/> | <img src="/pages_capture/m_reservation.gif"/> |
+
 : 예약 안내 페이지입니다.
--->
